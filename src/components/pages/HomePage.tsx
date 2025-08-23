@@ -1,31 +1,30 @@
-
 import { Button } from "../ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
 import { Badge } from "../ui/badge";
 import { Check, MessageSquare, Shield, TrendingUp, Smartphone, Settings, BarChart3, Star } from "lucide-react";
 import RCSFeatureShowcase from "../RCSFeatureShowcase";
-import placeholder from "/images/logo.png";
-
+import Image from "next/image"; // ✅ needed to use <Image />
 
 export default function HomePage() {
-  // Logo data with all imported images
+  // ✅ Just use strings for public assets — no import needed
   const logos = [
-    { name: "Virgin Flooring", src: placeholder },
-    { name: "Flour Power", src: placeholder },
-    { name: "Blank", src: placeholder },
-    { name: "Smokersville", src: placeholder },
-    { name: "Home Instead", src: placeholder },
-    { name: "Virgin Flooring", src: placeholder },
-    { name: "Flour Power", src: placeholder },
-    { name: "Blank", src: placeholder },
-    { name: "Smokersville", src: placeholder },
-    { name: "Home Instead", src: placeholder },
-    { name: "Virgin Flooring", src: placeholder },
-    { name: "Flour Power", src: placeholder },
-    { name: "Blank", src: placeholder },
-    { name: "Smokersville", src: placeholder },
-    { name: "Home Instead", src: placeholder },
+    { name: "Virgin Flooring", src: "/images/logo.png" },
+    { name: "Flour Power", src: "/images/logo.png" },
+    { name: "Blank", src: "/images/logo.png" },
+    { name: "Smokersville", src: "/images/logo.png" },
+    { name: "Home Instead", src: "/images/logo.png" },
+    { name: "Virgin Flooring", src: "/images/logo.png" },
+    { name: "Flour Power", src: "/images/logo.png" },
+    { name: "Blank", src: "/images/logo.png" },
+    { name: "Smokersville", src: "/images/logo.png" },
+    { name: "Home Instead", src: "/images/logo.png" },
+    { name: "Virgin Flooring", src: "/images/logo.png" },
+    { name: "Flour Power", src: "/images/logo.png" },
+    { name: "Blank", src: "/images/logo.png" },
+    { name: "Smokersville", src: "/images/logo.png" },
+    { name: "Home Instead", src: "/images/logo.png" },
   ];
+
 
   return (
     <div className="min-h-screen bg-black text-white">
