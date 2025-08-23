@@ -11,9 +11,7 @@ const NAV = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
   { label: "Pricing", href: "/pricing" },
-  // add About/Contact pages later if you create routes:
-  // { label: "About", href: "/about" },
-  // { label: "Contact", href: "/contact" },
+  { label: "Apply", href: "/apply" },     // ⬅️ new
 ];
 
 export default function Header() {
