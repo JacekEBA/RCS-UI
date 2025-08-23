@@ -3,28 +3,18 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui
 import { Badge } from "../ui/badge";
 import { Check, MessageSquare, Shield, TrendingUp, Smartphone, Settings, BarChart3, Star } from "lucide-react";
 import RCSFeatureShowcase from "../RCSFeatureShowcase";
-import placeholder from "/images/logo.png";
+import Image from "next/image";
 
 
 export default function HomePage() {
   // Logo data with all imported images
-  const logos = [
-    { name: "Virgin Flooring", src: placeholder },
-    { name: "Flour Power", src: placeholder },
-    { name: "Blank", src: placeholder },
-    { name: "Smokersville", src: placeholder },
-    { name: "Home Instead", src: placeholder },
-    { name: "Virgin Flooring", src: placeholder },
-    { name: "Flour Power", src: placeholder },
-    { name: "Blank", src: placeholder },
-    { name: "Smokersville", src: placeholder },
-    { name: "Home Instead", src: placeholder },
-    { name: "Virgin Flooring", src: placeholder },
-    { name: "Flour Power", src: placeholder },
-    { name: "Blank", src: placeholder },
-    { name: "Smokersville", src: placeholder },
-    { name: "Home Instead", src: placeholder },
-  ];
+  <Image
+  src="/images/logo.png"
+  alt={logo.name}
+  width={160}
+  height={80}
+  className="object-contain filter brightness-90 hover:brightness-110 transition-all duration-300"
+/>
 
   return (
     <div className="min-h-screen bg-black text-white">
