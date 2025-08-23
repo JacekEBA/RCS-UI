@@ -13,21 +13,21 @@ import placeholder from "/images/logo.png";
 export default function HomePage() {
   // Logo data with all imported images
   const logos = [
-    { name: "Virgin Flooring", src: virginLogo },
-    { name: "Flour Power", src: flourPowerLogo },
-    { name: "Blank", src: blankLogo },
-    { name: "Smokersville", src: smokersvilleLogo },
-    { name: "Home Instead", src: homeInsteadLogo },
-    { name: "Virgin Flooring", src: virginLogo },
-    { name: "Flour Power", src: flourPowerLogo },
-    { name: "Blank", src: blankLogo },
-    { name: "Smokersville", src: smokersvilleLogo },
-    { name: "Home Instead", src: homeInsteadLogo },
-    { name: "Virgin Flooring", src: virginLogo },
-    { name: "Flour Power", src: flourPowerLogo },
-    { name: "Blank", src: blankLogo },
-    { name: "Smokersville", src: smokersvilleLogo },
-    { name: "Home Instead", src: homeInsteadLogo },
+    { name: "Virgin Flooring", src: placeholder },
+    { name: "Flour Power", src: placeholder },
+    { name: "Blank", src: placeholder },
+    { name: "Smokersville", src: placeholder },
+    { name: "Home Instead", src: placeholder },
+    { name: "Virgin Flooring", src: placeholder },
+    { name: "Flour Power", src: placeholder },
+    { name: "Blank", src: placeholder },
+    { name: "Smokersville", src: placeholder },
+    { name: "Home Instead", src: placeholder },
+    { name: "Virgin Flooring", src: placeholder },
+    { name: "Flour Power", src: placeholder },
+    { name: "Blank", src: placeholder },
+    { name: "Smokersville", src: placeholder },
+    { name: "Home Instead", src: placeholder },
   ];
 
   return (
