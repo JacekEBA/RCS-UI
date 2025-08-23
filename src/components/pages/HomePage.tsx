@@ -3,11 +3,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui
 import { Badge } from "../ui/badge";
 import { Check, MessageSquare, Shield, TrendingUp, Smartphone, Settings, BarChart3, Star } from "lucide-react";
 import RCSFeatureShowcase from "../RCSFeatureShowcase";
-import blankLogo from "figma:asset/b61374df0311d910f9f80e4109045cf69f4dd428.png";
-import virginLogo from "figma:asset/125fed28dfb6ad2f2ca6716c2a0b646ee1082e8f.png";
-import flourPowerLogo from "figma:asset/fc45b1e3a25b2394f98873ea661df4e17e177211.png";
-import smokersvilleLogo from "figma:asset/8b4b92c26eae621c3d6fb92b10ec784ab782c779.png";
-import homeInsteadLogo from "figma:asset/6c0b67ebbe5ed9096e3a1b720e4fbadf2dea757c.png";
+import placeholder from "/images/logo.png";
+import placeholder from "/images/logo.png";
+import placeholder from "/images/logo.png";
+import placeholder from "/images/logo.png";
+import placeholder from "/images/logo.png";
+
 
 export default function HomePage() {
   // Logo data with all imported images
