@@ -123,7 +123,7 @@ export default function ServicesPage() {
             <div className="bg-gray-900/50 border border-gray-700/50 rounded-2xl p-8 max-w-2xl mx-auto">
               <h3 className="text-2xl text-white mb-4">Ready to Transform Your Customer Messaging?</h3>
               <p className="text-gray-400 mb-6">
-                Let's discuss how bMessage can help you achieve your business communication objectives and drive growth.
+                Let&rsquo;s discuss how bMessage can help you achieve your business communication objectives and drive growth.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
