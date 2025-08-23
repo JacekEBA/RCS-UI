@@ -10,7 +10,7 @@ export default function HomePage() {
   // Logo data with all imported images
   <Image
   src="/images/logo.png"
-  alt={logo.name}
+  alt=""
   width={160}
   height={80}
   className="object-contain filter brightness-90 hover:brightness-110 transition-all duration-300"
