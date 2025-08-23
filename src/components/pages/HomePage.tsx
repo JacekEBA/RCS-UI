@@ -65,7 +65,7 @@ export default function HomePage() {
       </section>
 
       {/* RCS Feature Showcase */}
-       /*<RCSFeatureShowcase />*/
+      {/*<RCSFeatureShowcase />*/}
 
       {/* Customer Logos Section */}
       <section className="py-20 lg:py-32">
