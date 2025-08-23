@@ -8,22 +8,12 @@ import Image from "next/image";
 
 import Image from "next/image";
 
-// Inside your JSX:
-{logos.map((logo, index) => (
-  <div 
-    key={`first-${index}`}
-    className="flex-shrink-0 w-40 h-20 bg-gray-900/30 border border-gray-700/30 rounded-xl flex items-center justify-center p-4 hover:bg-gray-800/30 hover:border-yellow-500/20 transition-all duration-300"
-  >
-    <Image 
-      src={logo.src} 
-      alt={logo.name}
-      width={160}
-      height={80}
-      className="object-contain filter brightness-90 hover:brightness-110 transition-all duration-300"
-    />
-  </div>
-))}
-
+const logos = [
+  { name: "Virgin Flooring", src: "/images/logo.png" },
+  { name: "Flour Power", src: "/images/logo.png" },
+  { name: "Smokersville", src: "/images/logo.png" },
+  { name: "Home Instead", src: "/images/logo.png" },
+];
 
   return (
     <div className="min-h-screen bg-black text-white">
