@@ -4,10 +4,6 @@ import { Badge } from "../ui/badge";
 import { Check, MessageSquare, Shield, TrendingUp, Smartphone, Settings, BarChart3, Star } from "lucide-react";
 import RCSFeatureShowcase from "../RCSFeatureShowcase";
 import placeholder from "/images/logo.png";
-import placeholder from "/images/logo.png";
-import placeholder from "/images/logo.png";
-import placeholder from "/images/logo.png";
-import placeholder from "/images/logo.png";
 
 
 export default function HomePage() {
