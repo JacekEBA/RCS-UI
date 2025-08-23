@@ -11,7 +11,9 @@ const NAV = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Apply", href: "/apply" },     // ⬅️ new
+  { label: "Apply", href: "/apply" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Header() {
