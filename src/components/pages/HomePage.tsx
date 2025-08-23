@@ -6,15 +6,24 @@ import RCSFeatureShowcase from "../RCSFeatureShowcase";
 import Image from "next/image";
 
 
-export default function HomePage() {
-  // Logo data with all imported images
-  <Image
-  src="/images/logo.png"
-  alt=""
-  width={160}
-  height={80}
-  className="object-contain filter brightness-90 hover:brightness-110 transition-all duration-300"
-/>
+import Image from "next/image";
+
+// Inside your JSX:
+{logos.map((logo, index) => (
+  <div 
+    key={`first-${index}`}
+    className="flex-shrink-0 w-40 h-20 bg-gray-900/30 border border-gray-700/30 rounded-xl flex items-center justify-center p-4 hover:bg-gray-800/30 hover:border-yellow-500/20 transition-all duration-300"
+  >
+    <Image 
+      src={logo.src} 
+      alt={logo.name}
+      width={160}
+      height={80}
+      className="object-contain filter brightness-90 hover:brightness-110 transition-all duration-300"
+    />
+  </div>
+))}
+
 
   return (
     <div className="min-h-screen bg-black text-white">
