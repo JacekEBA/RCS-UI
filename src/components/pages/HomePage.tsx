@@ -2,6 +2,7 @@ import { Button } from "../ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
 import { Badge } from "../ui/badge";
 import { Check, MessageSquare, Shield, TrendingUp, Smartphone, Settings, BarChart3, Star } from "lucide-react";
+import RCSFeatureShowcase from "../RCSFeatureShowcase";
 import Image from "next/image"; // ✅ needed to use <Image />
 
 export default function HomePage() {
