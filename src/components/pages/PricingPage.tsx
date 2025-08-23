@@ -84,7 +84,7 @@ export default function PricingPage() {
 
           {/* Pricing Cards */}
           <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {pricingPlans.map((plan, index) => (
+            {pricingPlans.map((plan) => (
               <Card 
                 key={plan.name}
                 className={`relative bg-gray-900/50 border-gray-700/50 backdrop-blur-sm transition-all duration-300 ${
@@ -114,7 +114,7 @@ export default function PricingPage() {
 
                 <CardContent className="space-y-6">
                   <div className="space-y-4">
-                    <h4 className="text-lg text-white mb-4">What's included:</h4>
+                    <h4 className="text-lg text-white mb-4">What&rsquo;s included:</h4>
                     {plan.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-center space-x-3">
                         <Check className="h-5 w-5 text-yellow-400 flex-shrink-0" />
@@ -166,7 +166,7 @@ export default function PricingPage() {
                 
                 <div>
                   <h3 className="text-xl text-yellow-400 mb-2">What happens if I exceed my message limit?</h3>
-                  <p className="text-gray-400">We'll notify you when you're approaching your limit. Additional messages are charged at $0.05 per message.</p>
+                  <p className="text-gray-400">We&rsquo;ll notify you when you&rsquo;re approaching your limit. Additional messages are charged at $0.05 per message.</p>
                 </div>
               </div>
               
