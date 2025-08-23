@@ -23,7 +23,8 @@
     "tailwind-merge": "^3.3.1",
     "react-day-picker": "^9.9.0",
     "embla-carousel-react": "^8.6.0",
-    "recharts": "^2.15.2"
+    "recharts": "^2.15.2",
+    "@radix-ui/react-checkbox": "^1.1.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
