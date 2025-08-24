@@ -1,4 +1,5 @@
-import ContactPage from "../../components/pages/ContactPage";
+﻿import ContactPage from "../../components/pages/ContactPage";
 
-export const metadata = { title: "Contact • RCS Service" };
+export const metadata = { title: "Contact â€¢ RCS Service" };
 export default function Page() { return <ContactPage />; }
+

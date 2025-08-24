@@ -1,4 +1,4 @@
-export default function ApplyPage() {
+﻿export default function ApplyPage() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header Section */}
@@ -60,3 +60,4 @@ export default function ApplyPage() {
     </div>
   );
 }
+

@@ -1,7 +1,8 @@
-import ApplyPage from "../../components/pages/ApplyPage";
+﻿import ApplyPage from "../../components/pages/ApplyPage";
 
-export const metadata = { title: "Apply • RCS Service" };
+export const metadata = { title: "Apply â€¢ RCS Service" };
 
 export default function Page() {
   return <ApplyPage />;
 }
+

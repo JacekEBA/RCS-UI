@@ -1,4 +1,4 @@
-export default function AboutPage() {
+﻿export default function AboutPage() {
   return (
     <div className="min-h-screen bg-black text-white flex items-center justify-center">
       <div className="text-center">
@@ -11,3 +11,4 @@ export default function AboutPage() {
     </div>
   );
 }
+

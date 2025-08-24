@@ -1,4 +1,4 @@
-import { Button } from "../ui/button";
+﻿import { Button } from "../ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
 import { Check, X } from "lucide-react";
 
@@ -213,3 +213,4 @@ export default function PricingPage() {
     </div>
   );
 }
+
