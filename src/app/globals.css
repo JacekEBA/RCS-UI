@@ -1,7 +1,7 @@
 /* 1) Load Tailwind v4 */
 @import "tailwindcss";
 
-/* 2) Light & dark runtime variables — GOLF THEME */
+/* 2) Light & dark runtime variables (your original values) */
 :root {
   --font-size: 14px;
 
@@ -11,110 +11,82 @@
   --text-xl: 1.25rem;      /* 20px */
   --text-2xl: 1.5rem;      /* 24px */
 
-  /* Base */
-  --background: #f6f9f5;                 /* fairway haze */
-  --foreground: #0f2417;                 /* deep evergreen text */
+  --background: #ffffff;
+  --foreground: oklch(0.145 0 0);
   --card: #ffffff;
-  --card-foreground: #0f2417;
-  --popover: #ffffff;
-  --popover-foreground: #0f2417;
-
-  /* Brand */
-  --primary: #1b5e20;                    /* evergreen */
-  --primary-foreground: #ffffff;
-  --secondary: #e8dcc2;                  /* bunker sand */
-  --secondary-foreground: #1b3b26;       /* dark turf */
-
-  /* UI Neutrals */
-  --muted: #e7efe8;                      /* pale green-gray */
-  --muted-foreground: #5e6e63;
-  --accent: #cfe8ff;                     /* sky blue */
-  --accent-foreground: #0e2a1b;
-
-  /* States */
-  --destructive: #d4183d;                /* flag red for errors */
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: #030213;
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.95 0.0058 264.53);
+  --secondary-foreground: #030213;
+  --muted: #ececf0;
+  --muted-foreground: #717182;
+  --accent: #e9ebef;
+  --accent-foreground: #030213;
+  --destructive: #d4183d;
   --destructive-foreground: #ffffff;
-  --ring: #2e7d32;                       /* focus ring = turf */
-
-  /* Form + borders */
-  --border: #d6e3d7;                     /* green-tinted border */
+  --border: rgba(0, 0, 0, 0.1);
   --input: transparent;
-  --input-background: #f2f6f2;
-  --switch-background: #c7d5c9;
-
-  /* Charts (golfy palette) */
-  --chart-1: #43a047;  /* fairway */
-  --chart-2: #64b5f6;  /* water */
-  --chart-3: #d9c7a1;  /* sand */
-  --chart-4: #2e7d32;  /* rough */
-  --chart-5: #e53935;  /* flag red */
-
-  /* Misc */
+  --input-background: #f3f3f5;
+  --switch-background: #cbced4;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
   --radius: 0.625rem;
 
-  /* Sidebar */
-  --sidebar: #f3f7f3;
-  --sidebar-foreground: #0f2417;
-  --sidebar-primary: #1b5e20;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #eaf2ea;
-  --sidebar-accent-foreground: #1b3b26;
-  --sidebar-border: #d2e0d4;
-  --sidebar-ring: #2e7d32;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: #030213;
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
 }
 
 .dark {
-  /* Base */
-  --background: #0f1a14;                 /* forest dusk */
-  --foreground: #e9f3ec;                 /* misty light */
-  --card: #102117;
-  --card-foreground: #e9f3ec;
-  --popover: #0f1a14;
-  --popover-foreground: #e9f3ec;
-
-  /* Brand */
-  --primary: #81c784;                    /* mint green on dark */
-  --primary-foreground: #0f1a14;
-  --secondary: #2b2f25;                  /* peat */
-  --secondary-foreground: #e9f3ec;
-
-  /* UI Neutrals */
-  --muted: #1b2a21;
-  --muted-foreground: #a7b9ad;
-  --accent: #193126;                     /* deep teal */
-  --accent-foreground: #e9f3ec;
-
-  /* States */
-  --destructive: #d85a5a;
-  --destructive-foreground: #ffffff;
-  --ring: #3aa86a;
-
-  /* Form + borders */
-  --border: #24382c;
-  --input: #1b2a21;
-
-  /* Charts */
-  --chart-1: #7bc67b;
-  --chart-2: #7ec1f4;
-  --chart-3: #cbb790;
-  --chart-4: #9ad6b0;
-  --chart-5: #ef9a9a;
-
-  /* Misc */
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
   --font-weight-medium: 500;
   --font-weight-normal: 400;
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
 
-  /* Sidebar */
-  --sidebar: #111e17;
-  --sidebar-foreground: #e9f3ec;
-  --sidebar-primary: #81c784;
-  --sidebar-primary-foreground: #0f1a14;
-  --sidebar-accent: #16261e;
-  --sidebar-accent-foreground: #e9f3ec;
-  --sidebar-border: #213428;
-  --sidebar-ring: #3aa86a;
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
 }
 
 /* 3) Map runtime variables to Tailwind theme variables (creates utilities) */
@@ -152,11 +124,6 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  /* Extra friendly names for gradients */
-  --color-fairway: var(--primary);   /* evergreen */
-  --color-sky: var(--accent);        /* sky blue */
-  --color-sand: var(--secondary);    /* bunker sand */
-
   /* Typography & weights (enables text-base, text-lg, etc. to your values) */
   --text-base: var(--text-base);
   --text-lg: var(--text-lg);
@@ -172,14 +139,18 @@
 /* 4) Small base hooks (Preflight already included by Tailwind) */
 @layer base {
   *, ::before, ::after, ::backdrop, ::file-selector-button {
+    /* make borders/outlines use your tokenized defaults */
     border-color: var(--color-border, currentColor);
     outline-color: color-mix(in oklab, var(--color-ring) 50%, transparent);
   }
 
   html { font-size: var(--font-size); }
-  body { @apply bg-background text-foreground; }
 
-  /* Optional base heading sizes */
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Optional base heading sizes — utilities will override these as usual */
   h1 { font-size: var(--text-2xl); font-weight: var(--font-weight-medium); line-height: 1.5; }
   h2 { font-size: var(--text-xl);  font-weight: var(--font-weight-medium); line-height: 1.5; }
   h3 { font-size: var(--text-lg);  font-weight: var(--font-weight-medium); line-height: 1.5; }
@@ -188,41 +159,12 @@
   p, input { font-weight: var(--font-weight-normal); }
 }
 
-/* 5) Utilities */
+/* 5) Your utility animation */
 @layer utilities {
-  @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
   .animate-scroll { animation: scroll 30s linear infinite; }
   .animate-scroll:hover { animation-play-state: paused; }
-
-  /* --- TEMP TOKEN ALIASES (remove after migrating classes) --- */
-  /* backgrounds */
-  .bg-black { background-color: var(--color-background) !important; }
-  .bg-white { background-color: var(--color-card) !important; }
-  .bg-gray-50,.bg-gray-100 { background-color: var(--color-muted) !important; }
-
-  /* text */
-  .text-white,.text-black { color: var(--color-foreground) !important; }
-  .text-gray-300,.text-gray-400,.text-gray-500,.text-gray-600 {
-    color: var(--color-muted-foreground) !important;
-  }
-
-  /* borders */
-  .border-gray-100,.border-gray-200,.border-gray-300 { border-color: var(--color-border) !important; }
-
-  /* gradient swaps often used in your hero */
-  .from-white { --tw-gradient-from: var(--color-card) !important; --tw-gradient-to: rgb(255 255 255 / 0) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
-  .via-gray-100 { --tw-gradient-stops: var(--tw-gradient-from), var(--color-muted), var(--tw-gradient-to) !important; }
-  .to-gray-300 { --tw-gradient-to: var(--color-muted) !important; }
-  .from-yellow-500\/10 { --tw-gradient-from: color-mix(in oklab, var(--color-accent) 20%, transparent) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
-  .to-yellow-500\/10 { --tw-gradient-to: color-mix(in oklab, var(--color-accent) 10%, transparent) !important; }
-  .bg-yellow-500\/20 { background-color: color-mix(in oklab, var(--color-accent) 20%, transparent) !important; }
-}
-
-@layer utilities {
-  /* header background & border you still have in markup */
-  .bg-black\/95 { background-color: color-mix(in oklab, var(--color-background) 95%, transparent) !important; }
-  .border-gray-800 { border-color: var(--color-border) !important; }
-
-  /* if you have any solid dark sections */
-  .bg-gray-800 { background-color: color-mix(in oklab, var(--color-foreground) 15%, var(--color-background)) !important; }
 }
