@@ -32,7 +32,7 @@
   --accent-foreground: #0e2a1b;
 
   /* States */
-  --destructive: #d4183d;                /* keep your red */
+  --destructive: #d4183d;                /* flag red for errors */
   --destructive-foreground: #ffffff;
   --ring: #2e7d32;                       /* focus ring = turf */
 
@@ -152,6 +152,11 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
+  /* Extra friendly names for gradients */
+  --color-fairway: var(--primary);   /* evergreen */
+  --color-sky: var(--accent);        /* sky blue */
+  --color-sand: var(--secondary);    /* bunker sand */
+
   /* Typography & weights (enables text-base, text-lg, etc. to your values) */
   --text-base: var(--text-base);
   --text-lg: var(--text-lg);
@@ -167,18 +172,14 @@
 /* 4) Small base hooks (Preflight already included by Tailwind) */
 @layer base {
   *, ::before, ::after, ::backdrop, ::file-selector-button {
-    /* make borders/outlines use your tokenized defaults */
     border-color: var(--color-border, currentColor);
     outline-color: color-mix(in oklab, var(--color-ring) 50%, transparent);
   }
 
   html { font-size: var(--font-size); }
+  body { @apply bg-background text-foreground; }
 
-  body {
-    @apply bg-background text-foreground;
-  }
-
-  /* Optional base heading sizes — utilities will override these as usual */
+  /* Optional base heading sizes */
   h1 { font-size: var(--text-2xl); font-weight: var(--font-weight-medium); line-height: 1.5; }
   h2 { font-size: var(--text-xl);  font-weight: var(--font-weight-medium); line-height: 1.5; }
   h3 { font-size: var(--text-lg);  font-weight: var(--font-weight-medium); line-height: 1.5; }
@@ -187,12 +188,32 @@
   p, input { font-weight: var(--font-weight-normal); }
 }
 
-/* 5) Your utility animation */
+/* 5) Utilities */
 @layer utilities {
-  @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
+  @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
   .animate-scroll { animation: scroll 30s linear infinite; }
   .animate-scroll:hover { animation-play-state: paused; }
+
+  /* --- TEMP TOKEN ALIASES (remove after migrating classes) --- */
+  /* backgrounds */
+  .bg-black { background-color: var(--color-background) !important; }
+  .bg-white { background-color: var(--color-card) !important; }
+  .bg-gray-50,.bg-gray-100 { background-color: var(--color-muted) !important; }
+
+  /* text */
+  .text-white,.text-black { color: var(--color-foreground) !important; }
+  .text-gray-300,.text-gray-400,.text-gray-500,.text-gray-600 {
+    color: var(--color-muted-foreground) !important;
+  }
+
+  /* borders */
+  .border-gray-100,.border-gray-200,.border-gray-300 { border-color: var(--color-border) !important; }
+
+  /* gradient swaps often used in your hero */
+  .from-white { --tw-gradient-from: var(--color-card) !important; --tw-gradient-to: rgb(255 255 255 / 0) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+  .via-gray-100 { --tw-gradient-stops: var(--tw-gradient-from), var(--color-muted), var(--tw-gradient-to) !important; }
+  .to-gray-300 { --tw-gradient-to: var(--color-muted) !important; }
+  .from-yellow-500\/10 { --tw-gradient-from: color-mix(in oklab, var(--color-accent) 20%, transparent) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+  .to-yellow-500\/10 { --tw-gradient-to: color-mix(in oklab, var(--color-accent) 10%, transparent) !important; }
+  .bg-yellow-500\/20 { background-color: color-mix(in oklab, var(--color-accent) 20%, transparent) !important; }
 }
