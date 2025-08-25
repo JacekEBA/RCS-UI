@@ -168,3 +168,13 @@
   .animate-scroll { animation: scroll 30s linear infinite; }
   .animate-scroll:hover { animation-play-state: paused; }
 }
+
+@layer utilities {
+  /* header background & border you still have in markup */
+  .bg-black\/95 { background-color: color-mix(in oklab, var(--color-background) 95%, transparent) !important; }
+  .border-gray-800 { border-color: var(--color-border) !important; }
+
+  /* if you have any solid dark sections */
+  .bg-gray-800 { background-color: color-mix(in oklab, var(--color-foreground) 15%, var(--color-background)) !important; }
+}
+
